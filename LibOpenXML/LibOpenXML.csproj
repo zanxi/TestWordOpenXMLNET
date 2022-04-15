@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.13.3\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4749D45-40AD-4DEB-A909-F151B5EBF17D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibOpenXML</RootNamespace>
+    <AssemblyName>LibOpenXML</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>libdlll\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.0.0-rc2\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.13.3.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.13.3\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Charts\ChartContext.cs" />
+    <Compile Include="Charts\ChartHelper.cs" />
+    <Compile Include="Charts\ChartsLegendStyle.cs" />
+    <Compile Include="Charts\ChartsValueTypes.cs" />
+    <Compile Include="Charts\LineChartContext.cs" />
+    <Compile Include="Charts\LineChartCreator.cs" />
+    <Compile Include="Charts\PieChartContext.cs" />
+    <Compile Include="Charts\PieChartCreator.cs" />
+    <Compile Include="Charts\PieChartItem.cs" />
+    <Compile Include="Charts\PieChartLabelStyle.cs" />
+    <Compile Include="Charts\_ChartBuilder.cs" />
+    <Compile Include="Common\ImageSize.cs" />
+    <Compile Include="Excel\DataTableImporter.cs" />
+    <Compile Include="Excel\DocumentCreator.cs" />
+    <Compile Include="Excel\_ExcelBuilder.cs" />
+    <Compile Include="MathInterpreter\AbstractConverter.cs" />
+    <Compile Include="MathInterpreter\AccentConverters.cs" />
+    <Compile Include="MathInterpreter\AlgorithmConverter.cs" />
+    <Compile Include="MathInterpreter\AlignmentConverter.cs" />
+    <Compile Include="MathInterpreter\ArrayConverter.cs" />
+    <Compile Include="MathInterpreter\BaseConverter.cs" />
+    <Compile Include="MathInterpreter\BaselessScriptConverter.cs" />
+    <Compile Include="MathInterpreter\BlockConverter.cs" />
+    <Compile Include="MathInterpreter\CommandConverter.cs" />
+    <Compile Include="MathInterpreter\CommentConverter.cs" />
+    <Compile Include="MathInterpreter\DefinitionConverter.cs" />
+    <Compile Include="MathInterpreter\DoubleScriptConverter.cs" />
+    <Compile Include="MathInterpreter\EqnArrayConverter.cs" />
+    <Compile Include="MathInterpreter\EquationConverter.cs" />
+    <Compile Include="MathInterpreter\ExceptionEventArg.cs" />
+    <Compile Include="MathInterpreter\ExpressionOptions.cs" />
+    <Compile Include="MathInterpreter\FootnoteConverter.cs" />
+    <Compile Include="MathInterpreter\FracCommandConverter.cs" />
+    <Compile Include="MathInterpreter\IEEEConverter.cs" />
+    <Compile Include="MathInterpreter\LabelCommandConverter.cs" />
+    <Compile Include="MathInterpreter\LatexExpression.cs" />
+    <Compile Include="MathInterpreter\LatexMathToMathMLConverter.cs" />
+    <Compile Include="MathInterpreter\LatexParser.cs" />
+    <Compile Include="MathInterpreter\LinkConverters.cs" />
+    <Compile Include="MathInterpreter\ListsConverters.cs" />
+    <Compile Include="MathInterpreter\MathcalConverter.cs" />
+    <Compile Include="MathInterpreter\MathConverter.cs" />
+    <Compile Include="MathInterpreter\NamedConverter.cs" />
+    <Compile Include="MathInterpreter\ParagraphConverter.cs" />
+    <Compile Include="MathInterpreter\PlainTextConverter.cs" />
+    <Compile Include="MathInterpreter\Program.cs" />
+    <Compile Include="MathInterpreter\QuoteConverters.cs" />
+    <Compile Include="MathInterpreter\RefCommandConverter.cs" />
+    <Compile Include="MathInterpreter\RootConverter.cs" />
+    <Compile Include="MathInterpreter\SequenceConverter.cs" />
+    <Compile Include="MathInterpreter\SingleScriptConverter.cs" />
+    <Compile Include="MathInterpreter\SqrtCommandConverter.cs" />
+    <Compile Include="MathInterpreter\TabularConverter.cs" />
+    <Compile Include="MathInterpreter\TextSizeConverters.cs" />
+    <Compile Include="MathInterpreter\TextStyleConverters.cs" />
+    <Compile Include="MathInterpreter\ThanksConverter.cs" />
+    <Compile Include="MathInterpreter\UnknownBlockConverter.cs" />
+    <Compile Include="MathInterpreter\VerbatimConverter.cs" />
+    <Compile Include="MathInterpreter\WrapperConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestGenerateDocument.cs" />
+    <Compile Include="TestLatexToWord.cs" />
+    <Compile Include="WordWrites2.cs" />
+    <Compile Include="Word\BookmarkReplacer.cs" />
+    <Compile Include="Word\DocumentCreator.cs" />
+    <Compile Include="Word\DocumentMerger.cs" />
+    <Compile Include="Word\DocumentOpener.cs" />
+    <Compile Include="Word\FormatStyle.cs" />
+    <Compile Include="Word\HorizontalAlignmentType.cs" />
+    <Compile Include="Word\ImageCreator.cs" />
+    <Compile Include="Word\PageBreaker.cs" />
+    <Compile Include="Word\ParagraphCreator.cs" />
+    <Compile Include="Word\StyleCreator.cs" />
+    <Compile Include="Word\TableCreator.cs" />
+    <Compile Include="Word\TableStyle.cs" />
+    <Compile Include="Word\TextParagraphType.cs" />
+    <Compile Include="Word\WordHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="libdlll\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MML2OMML.XSL" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.13.3\build\NUnit.props'))" />
+  </Target>
+</Project>

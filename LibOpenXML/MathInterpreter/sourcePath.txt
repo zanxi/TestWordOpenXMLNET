@@ -1,0 +1,5 @@
+\begin{document}
+\begin{equation}
+\sum_{i=1}^{10} t_i
+\end{equation}
+\end{document}

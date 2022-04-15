@@ -1,0 +1,11 @@
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\bin\Debug\OpenXML_HeaderFooter.exe.config
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\bin\Debug\OpenXML_HeaderFooter.exe
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\bin\Debug\OpenXML_HeaderFooter.pdb
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\bin\Debug\DocumentFormat.OpenXml.dll
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\bin\Debug\DocumentFormat.OpenXml.xml
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\obj\Debug\OpenXML_HeaderFooter.csproj.CopyComplete
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\obj\Debug\OpenXML_HeaderFooter.exe
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\obj\Debug\OpenXML_HeaderFooter.pdb
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\bin\Debug\LibOpenXML.dll
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\bin\Debug\LibOpenXML.pdb
+D:\_2022___\Src_3__\libopenxml\OpenXML_HeaderFooter\obj\Debug\OpenXML_HeaderFooter.csprojAssemblyReference.cache

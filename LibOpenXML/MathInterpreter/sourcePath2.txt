@@ -1,0 +1,1 @@
+{\rm{R}}SBU_{ij}^L-{\rm{R}}SBU_{ij}^H={q_{ap}}(f_{ij}^L-f_{ij}^H)/{N_{ap}}

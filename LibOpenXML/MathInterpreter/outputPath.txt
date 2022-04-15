@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"[]>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="ru">
+  <head>
+    <base href="file:///d:/_2022___/Src_3__/MathInterpreter/MathInterpreter/outputPath.txt" />
+    <title>Без названия</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Latex document converted to XHTML 1.1 + MathML 2.0" />
+    <meta name="generator" content="Latex2MathML, © Markovtsev Vadim, 2010" />
+    <meta name="date" content="04.04.2022 15:51:39" />
+    <meta name="src" content="sourcePath.txt" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <h2 class="toc_header">Содержание</h2>
+    <div class="toc"></div>
+    <br />
+    <span class="normalsize">m </span>
+    <span class="normalsize">&amp;</span>
+    <span class="normalsize">= </span>
+    <mfrac>
+      <mrow>
+        <span class="normalsize">m_0</span>
+      </mrow>
+      <mrow>
+        <msqrt>
+          <mrow>
+            <span class="normalsize">1-</span>
+            <mfrac>
+              <mrow>
+                <span class="normalsize">v^2</span>
+              </mrow>
+              <mrow>
+                <span class="normalsize">c^2</span>
+              </mrow>
+            </mfrac>
+          </mrow>
+        </msqrt>
+      </mrow>
+    </mfrac>
+  </body>
+</html>
